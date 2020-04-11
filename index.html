@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+
+<title>COOKIES</title>
+
+</head>
+
+<body>
+
+<h1 style="color: red">Cookies</h1>
+
+<script type="text/javascript">
+
+var visitor_name = prompt("What's your name?","");
+
+var x = new Date();
+
+x.setMonth(x.getMonth() + 3);
+
+var cookie_date  = x.toUTCString();
+
+final_cookie = "my_cookie=" + encodeURIComponent(visitor_name) + ";expires_on = " + cookie_date; 
+
+document.cookie = final_cookie;
+
+alert(final_cookie); 
+
+</script>
+
+</body>
+
+</html>
